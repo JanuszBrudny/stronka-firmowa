@@ -57,8 +57,7 @@ body {
 	border: 1px solid #fff;
 	color: #fff;
 }
-.menu-btn,
-.close-btn {
+.menu-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -66,7 +65,5 @@ body {
 	margin: 1rem;
 	color: var(--nav-footer-color);
 	text-transform: uppercase;
-}
-.close-btn {
-	display: none;
+	border-radius: 8px;
 }
