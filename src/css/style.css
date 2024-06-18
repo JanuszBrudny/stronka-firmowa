@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--section-color-first: #4f5d75;
+	--section-color-second: #2d3142;
+	--body-color: #bfc0c0;
+	--alt-color: #ef8354;
+	--nav-footer-color: rgb(78, 78, 78);
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+body {
+	background-color: var(--body-color);
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+.nav {
+	position: fixed;
+	width: 100%;
+	height: 64px;
+	background-color: var(--nav-footer-color);
+	border: solid 1px #fff;
+}
+.logo {
+	height: 64px;
+	margin: 0 1em;
+}
+
+.nav-items {
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--nav-footer-color);
+}
+.active-nav {
+	display: flex;
+}
+.nav-items a {
+	top: 64px;
+	width: 100%;
+	padding: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.menu-btn,
+.close-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	margin: 1rem;
+	color: var(--nav-footer-color);
+	text-transform: uppercase;
+}
+.close-btn {
+	display: none;
+}
