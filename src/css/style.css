@@ -7,9 +7,9 @@
 }
 
 :root {
-	--section-color-first: #4f5d75;
-	--section-color-second: #2d3142;
-	--body-color: #1b1731;
+	--section-color-first: #fefefe;
+	--section-color-second: #515a80;
+	--body-color: #f0f3f5;
 	--alt-color: #ef8354;
 	--nav-footer-color: rgb(78, 78, 78);
 }
@@ -20,7 +20,7 @@ html {
 body {
 	background-color: var(--body-color);
 	font-family: "Montserrat", sans-serif;
-	color: #fff;
+	color: #000;
 }
 .wrapper {
 	margin: 0 auto;
@@ -30,13 +30,11 @@ body {
 .nav {
 	position: fixed;
 	width: 100vw;
-	height: 64px;
 	background-color: var(--nav-footer-color);
 	z-index: 10;
 }
 .logo {
-	height: 64px;
-	margin: 0 1em;
+	margin: auto 1em;
 }
 .logo-img {
 	width: 200px;
@@ -70,29 +68,24 @@ body {
 	top: 0;
 	right: 0;
 	padding: 1rem;
-	margin: 1em;
+	margin: 1rem;
 	color: var(--nav-footer-color);
 	text-transform: uppercase;
 	border-radius: 8px;
 }
 .header {
 	position: relative;
-	height: 700px;
+	width: 100%;
+	height: 500px;
+	background-image: url(/dist/img/transformer-1964508_640.png);
+	background-position: center;
+	background-size: cover;
 }
 .header-bg {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	background-image: linear-gradient(
-		to right bottom,
-		#2d3142,
-		#3751a8,
-		#5f73a4,
-		#4365aa,
-		#4f5d75
-	);
-	background-position: center;
-	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .header-text {
@@ -106,10 +99,11 @@ body {
 .header-text h1,
 h2 {
 	padding: 20px 0px;
+	color: #fff;
 }
 .section-title {
 	text-align: center;
-	padding: 66px 0px 10px;
+	padding: 10px 0px 10px;
 	font-family: "Archivo Black", sans-serif;
 	font-size: 2.4em;
 }
@@ -132,6 +126,7 @@ h2 {
 .iso-img {
 	height: 200px;
 	width: 250px;
+	box-shadow: -9px 3px 50px -7px rgb(#f29f60, #f0cdbe, #ef8354);
 }
 .aboutus-hero {
 	position: relative;
@@ -157,10 +152,11 @@ h2 {
 }
 .hero-text {
 	padding: 20px;
+	color: #fff;
 }
 .offers {
 	height: 500px;
-	background-color: var(--section-color-second);
+	background-color: var(--section-color-first);
 }
 .contact {
 	width: 100%;
@@ -174,6 +170,9 @@ h2 {
 	align-items: center;
 	justify-content: space-around;
 	font-size: 1.5rem;
+}
+.contact-elements a {
+	color: #000;
 }
 .contact-elements a,
 .map {
@@ -196,7 +195,7 @@ h2 {
 	text-align: center;
 	font-size: 1.5rem;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 	.nav {
 		display: flex;
 		justify-content: space-between;
@@ -210,6 +209,6 @@ h2 {
 	}
 	.nav-items a {
 		border: none;
-		font-size: 1rem;
+		font-size: 1.6rem;
 	}
 }
